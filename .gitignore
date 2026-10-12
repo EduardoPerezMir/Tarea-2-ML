@@ -2,3 +2,5 @@ Tarea2_OII432-2s-2026-v2.ipynb
 sample_submission.csv
 test.csv
 train.csv
+.vscode/
+.gitignore
