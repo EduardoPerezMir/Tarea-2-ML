@@ -1,0 +1,77 @@
+{
+  "versiones": {
+    "numpy": "1.26.2",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1"
+  },
+  "seed": 42,
+  "modelo": "logistica_texto_conteos",
+  "parametros": {
+    "clf__C": 0.3,
+    "clf__class_weight": null
+  },
+  "umbral": 0.5,
+  "origen_configuracion": "Ganador original en B, congelado antes de añadir la proporción",
+  "bloques": {
+    "A": {
+      "n": 90904,
+      "desde": "2024-01-04T17:06:15+00:00",
+      "hasta": "2024-07-31T23:27:03+00:00",
+      "ids_sha256": "1a544c2891ac1bfb204cd413f002aa3df3892c9bf64ecf208c4af693dc9535df"
+    },
+    "B": {
+      "n": 25762,
+      "desde": "2024-08-01T07:36:56+00:00",
+      "hasta": "2024-09-30T23:25:01+00:00",
+      "ids_sha256": "53bfe1c73e99b389cf22d725e7b696b2dadc6d2aeb6889701b2991f6fcb51c39"
+    }
+  },
+  "nulos_proporcion": {
+    "A": 40,
+    "B": 9
+  },
+  "metricas_B": {
+    "original": {
+      "ap": 0.33799307907204645,
+      "f1": 0.07771260997067449,
+      "precision": 0.6838709677419355,
+      "recall": 0.04119704624951419
+    },
+    "con_proporcion": {
+      "ap": 0.33788822945645985,
+      "f1": 0.07772685609532538,
+      "precision": 0.686084142394822,
+      "recall": 0.04119704624951419
+    },
+    "diferencia (con - original)": {
+      "ap": -0.00010484961558659966,
+      "f1": 1.4246124650896252e-05,
+      "precision": 0.002213174652886507,
+      "recall": 0.0
+    }
+  },
+  "matrices_confusion_B": {
+    "original": [
+      [
+        20518,
+        98
+      ],
+      [
+        4934,
+        212
+      ]
+    ],
+    "con_proporcion": [
+      [
+        20519,
+        97
+      ],
+      [
+        4934,
+        212
+      ]
+    ]
+  },
+  "conservar_proporcion": false,
+  "limitacion": "B se reutiliza; esta ablación no demuestra generalización ni consistencia temporal."
+}
