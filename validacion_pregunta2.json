@@ -1,0 +1,1561 @@
+{
+  "versiones": {
+    "numpy": "1.26.2",
+    "pandas": "2.3.3",
+    "sklearn": "1.9.1"
+  },
+  "semilla": 42,
+  "decisiones": {
+    "modelo": "boosting_tasas",
+    "conservar_log_monto_clp": false,
+    "parametros": {
+      "clf__learning_rate": 0.03,
+      "clf__max_leaf_nodes": 8
+    },
+    "embargo_dias": 30,
+    "metrica_seleccion": "AP media - 0.5*std temporal - 0.25*brecha positiva",
+    "umbral": 0.21000000000000002,
+    "regla_umbral": "grilla fija; meseta F1 global y semanal; mayor corte",
+    "costo_falsa_alerta": 1.0,
+    "costo_desierta_no_detectada": 3.8257981572744804
+  },
+  "cv": [
+    {
+      "config_id": "c11",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 8
+      },
+      "ap_media": 0.33193742302495455,
+      "ap_std": 0.008555984022771655,
+      "ap_train_media": 0.36405491216327635,
+      "brecha_media": 0.0321174891383218,
+      "puntuacion": 0.31963005872898825
+    },
+    {
+      "config_id": "c13",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.06,
+        "clf__max_leaf_nodes": 8
+      },
+      "ap_media": 0.33383287274633494,
+      "ap_std": 0.009004464177974066,
+      "ap_train_media": 0.3956718567677194,
+      "brecha_media": 0.06183898402138449,
+      "puntuacion": 0.3138708946520018
+    },
+    {
+      "config_id": "c12",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 16
+      },
+      "ap_media": 0.33340546632445084,
+      "ap_std": 0.01052814989874155,
+      "ap_train_media": 0.4078718736007396,
+      "brecha_media": 0.07446640727628877,
+      "puntuacion": 0.3095247895560079
+    },
+    {
+      "config_id": "c14",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.06,
+        "clf__max_leaf_nodes": 16
+      },
+      "ap_media": 0.3346288298790805,
+      "ap_std": 0.00990674925619417,
+      "ap_train_media": 0.4588464669648214,
+      "brecha_media": 0.12421763708574092,
+      "puntuacion": 0.2986210459795482
+    },
+    {
+      "config_id": "c03",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ap_media": 0.3078744913406426,
+      "ap_std": 0.0018491253087343153,
+      "ap_train_media": 0.34468414870947023,
+      "brecha_media": 0.036809657368827575,
+      "puntuacion": 0.29774751434406854
+    },
+    {
+      "config_id": "c04",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ap_media": 0.3156614622366836,
+      "ap_std": 0.003958454449715129,
+      "ap_train_media": 0.3817925862665099,
+      "brecha_media": 0.06613112402982631,
+      "puntuacion": 0.2971494540043695
+    },
+    {
+      "config_id": "c07",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ap_media": 0.31575623033804767,
+      "ap_std": 0.005205462160008695,
+      "ap_train_media": 0.382830734058831,
+      "brecha_media": 0.06707450372078332,
+      "puntuacion": 0.29638487332784746
+    },
+    {
+      "config_id": "c06",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ap_media": 0.30640435375039754,
+      "ap_std": 0.004162291871057374,
+      "ap_train_media": 0.346489000634757,
+      "brecha_media": 0.040084646884359455,
+      "puntuacion": 0.294302046093779
+    },
+    {
+      "config_id": "c08",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ap_media": 0.31684987051982977,
+      "ap_std": 0.005765044208844915,
+      "ap_train_media": 0.41933121731999173,
+      "brecha_media": 0.10248134680016197,
+      "puntuacion": 0.2883470117153668
+    },
+    {
+      "config_id": "c05",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ap_media": 0.3156395641382211,
+      "ap_std": 0.005243693778678585,
+      "ap_train_media": 0.41846331214197346,
+      "brecha_media": 0.1028237480037524,
+      "puntuacion": 0.2873117802479437
+    },
+    {
+      "config_id": "c00",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ap_media": 0.2863494848024328,
+      "ap_std": 0.006373218458488456,
+      "ap_train_media": 0.29981984302664894,
+      "brecha_media": 0.013470358224216161,
+      "puntuacion": 0.2797952860171345
+    },
+    {
+      "config_id": "c01",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ap_media": 0.28613282214429964,
+      "ap_std": 0.006833902005658762,
+      "ap_train_media": 0.3008435266895502,
+      "brecha_media": 0.014710704545250622,
+      "puntuacion": 0.2790381950051576
+    },
+    {
+      "config_id": "c02",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ap_media": 0.28598774308369584,
+      "ap_std": 0.006945258075053825,
+      "ap_train_media": 0.30113527382135347,
+      "brecha_media": 0.015147530737657641,
+      "puntuacion": 0.2787282313617545
+    },
+    {
+      "config_id": "c10",
+      "modelo": "bosque_estructural",
+      "params": {},
+      "ap_media": 0.28822110616324387,
+      "ap_std": 0.002369418522367153,
+      "ap_train_media": 0.34341299952800175,
+      "brecha_media": 0.05519189336475788,
+      "puntuacion": 0.2732384235608708
+    },
+    {
+      "config_id": "c09",
+      "modelo": "arbol_estructural",
+      "params": {},
+      "ap_media": 0.2588366320735325,
+      "ap_std": 0.0049546417457819085,
+      "ap_train_media": 0.28058904235809523,
+      "brecha_media": 0.02175241028456269,
+      "puntuacion": 0.2509212086295009
+    }
+  ],
+  "cv_por_ventana": [
+    {
+      "config_id": "c00",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "junio",
+      "ap_train": 0.2974537194577665,
+      "ap": 0.28800222267442355,
+      "brecha_positiva": 0.00945149678334295,
+      "f1_05": 0.01937046004842615
+    },
+    {
+      "config_id": "c00",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "julio",
+      "ap_train": 0.30216212643098317,
+      "ap": 0.291733531042936,
+      "brecha_positiva": 0.01042859538804719,
+      "f1_05": 0.033198081888601995
+    },
+    {
+      "config_id": "c00",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.2998436831911972,
+      "ap": 0.27931270068993885,
+      "brecha_positiva": 0.020530982501258344,
+      "f1_05": 0.03269118505545826
+    },
+    {
+      "config_id": "c01",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "junio",
+      "ap_train": 0.29857968305243054,
+      "ap": 0.2882399046811418,
+      "brecha_positiva": 0.010339778371288744,
+      "f1_05": 0.026378896882494004
+    },
+    {
+      "config_id": "c01",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "julio",
+      "ap_train": 0.303188006628684,
+      "ap": 0.2916650510669912,
+      "brecha_positiva": 0.011522955561692805,
+      "f1_05": 0.03671071953010279
+    },
+    {
+      "config_id": "c01",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.30076289038753623,
+      "ap": 0.2784935106847659,
+      "brecha_positiva": 0.02226937970277032,
+      "f1_05": 0.03832752613240418
+    },
+    {
+      "config_id": "c02",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "junio",
+      "ap_train": 0.2987886085539424,
+      "ap": 0.288153929734548,
+      "brecha_positiva": 0.010634678819394394,
+      "f1_05": 0.029505582137161084
+    },
+    {
+      "config_id": "c02",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "julio",
+      "ap_train": 0.30351939915399906,
+      "ap": 0.29159175199125176,
+      "brecha_positiva": 0.011927647162747301,
+      "f1_05": 0.03813714704803814
+    },
+    {
+      "config_id": "c02",
+      "modelo": "logistica_estructural",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.301097813756119,
+      "ap": 0.27821754752528777,
+      "brecha_positiva": 0.022880266230831225,
+      "f1_05": 0.04055619930475087
+    },
+    {
+      "config_id": "c03",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "junio",
+      "ap_train": 0.34023540098018146,
+      "ap": 0.30987457518946504,
+      "brecha_positiva": 0.030360825790716417,
+      "f1_05": 0.019378280177634235
+    },
+    {
+      "config_id": "c03",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "julio",
+      "ap_train": 0.3464131300263643,
+      "ap": 0.30622713739281343,
+      "brecha_positiva": 0.04018599263355088,
+      "f1_05": 0.029574861367837338
+    },
+    {
+      "config_id": "c03",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.3474039151218648,
+      "ap": 0.3075217614396494,
+      "brecha_positiva": 0.03988215368221543,
+      "f1_05": 0.036214953271028034
+    },
+    {
+      "config_id": "c04",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "junio",
+      "ap_train": 0.3793079216108805,
+      "ap": 0.31896610380105794,
+      "brecha_positiva": 0.06034181780982256,
+      "f1_05": 0.031150159744408944
+    },
+    {
+      "config_id": "c04",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "julio",
+      "ap_train": 0.38288223560246293,
+      "ap": 0.31127438923012096,
+      "brecha_positiva": 0.07160784637234197,
+      "f1_05": 0.03600293901542983
+    },
+    {
+      "config_id": "c04",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.38318760158618637,
+      "ap": 0.31674389367887196,
+      "brecha_positiva": 0.06644370790731441,
+      "f1_05": 0.04748118123914302
+    },
+    {
+      "config_id": "c05",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "junio",
+      "ap_train": 0.41908710948323935,
+      "ap": 0.31787236321119583,
+      "brecha_positiva": 0.10121474627204352,
+      "f1_05": 0.0547945205479452
+    },
+    {
+      "config_id": "c05",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "julio",
+      "ap_train": 0.419100050985164,
+      "ap": 0.3096490205056544,
+      "brecha_positiva": 0.1094510304795096,
+      "f1_05": 0.04278462654097172
+    },
+    {
+      "config_id": "c05",
+      "modelo": "logistica_texto_sin_conteos",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.4172027759575171,
+      "ap": 0.319397308697813,
+      "brecha_positiva": 0.09780546725970407,
+      "f1_05": 0.06303724928366762
+    },
+    {
+      "config_id": "c06",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "junio",
+      "ap_train": 0.3420303535678587,
+      "ap": 0.3089845343922045,
+      "brecha_positiva": 0.03304581917565419,
+      "f1_05": 0.02723267921505807
+    },
+    {
+      "config_id": "c06",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "julio",
+      "ap_train": 0.34827738952485077,
+      "ap": 0.3016026150257378,
+      "brecha_positiva": 0.04667477449911295,
+      "f1_05": 0.032448377581120944
+    },
+    {
+      "config_id": "c06",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.03
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.3491592588115615,
+      "ap": 0.3086259118332503,
+      "brecha_positiva": 0.040533346978311235,
+      "f1_05": 0.041884816753926704
+    },
+    {
+      "config_id": "c07",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "junio",
+      "ap_train": 0.3802720090094638,
+      "ap": 0.3191415827883357,
+      "brecha_positiva": 0.061130426221128076,
+      "f1_05": 0.04198019801980198
+    },
+    {
+      "config_id": "c07",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "julio",
+      "ap_train": 0.38405746433247223,
+      "ap": 0.3097622313059315,
+      "brecha_positiva": 0.07429523302654073,
+      "f1_05": 0.043034281546316555
+    },
+    {
+      "config_id": "c07",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.1
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.384162728834557,
+      "ap": 0.31836487691987586,
+      "brecha_positiva": 0.06579785191468113,
+      "f1_05": 0.05763688760806916
+    },
+    {
+      "config_id": "c08",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "junio",
+      "ap_train": 0.42011827451335804,
+      "ap": 0.3187979238431857,
+      "brecha_positiva": 0.10132035067017231,
+      "f1_05": 0.07071483474250577
+    },
+    {
+      "config_id": "c08",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "julio",
+      "ap_train": 0.4198141443725185,
+      "ap": 0.3103631720089522,
+      "brecha_positiva": 0.10945097236356632,
+      "f1_05": 0.059722715961606825
+    },
+    {
+      "config_id": "c08",
+      "modelo": "logistica_texto_conteos",
+      "params": {
+        "clf__C": 0.3
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.41806123307409865,
+      "ap": 0.3213885157073514,
+      "brecha_positiva": 0.09667271736674726,
+      "f1_05": 0.07179487179487179
+    },
+    {
+      "config_id": "c09",
+      "modelo": "arbol_estructural",
+      "params": {},
+      "ventana": "junio",
+      "ap_train": 0.2777782472581423,
+      "ap": 0.2628095289181624,
+      "brecha_positiva": 0.014968718339979925,
+      "f1_05": 0.03260437375745527
+    },
+    {
+      "config_id": "c09",
+      "modelo": "arbol_estructural",
+      "params": {},
+      "ventana": "julio",
+      "ap_train": 0.28250337528942776,
+      "ap": 0.2604153684746864,
+      "brecha_positiva": 0.02208800681474138,
+      "f1_05": 0.033823529411764704
+    },
+    {
+      "config_id": "c09",
+      "modelo": "arbol_estructural",
+      "params": {},
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.28148550452671556,
+      "ap": 0.2532849988277488,
+      "brecha_positiva": 0.02820050569896676,
+      "f1_05": 0.06132879045996593
+    },
+    {
+      "config_id": "c10",
+      "modelo": "bosque_estructural",
+      "params": {},
+      "ventana": "junio",
+      "ap_train": 0.3438504203232632,
+      "ap": 0.29028328705404943,
+      "brecha_positiva": 0.05356713326921375,
+      "f1_05": 0.023340040241448694
+    },
+    {
+      "config_id": "c10",
+      "modelo": "bosque_estructural",
+      "params": {},
+      "ventana": "julio",
+      "ap_train": 0.3460711882911289,
+      "ap": 0.28563287037641216,
+      "brecha_positiva": 0.06043831791471671,
+      "f1_05": 0.03240058910162003
+    },
+    {
+      "config_id": "c10",
+      "modelo": "bosque_estructural",
+      "params": {},
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.34031738996961314,
+      "ap": 0.28874716105926995,
+      "brecha_positiva": 0.051570228910343185,
+      "f1_05": 0.056128293241695305
+    },
+    {
+      "config_id": "c11",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 8
+      },
+      "ventana": "junio",
+      "ap_train": 0.3663928785139586,
+      "ap": 0.323823898904273,
+      "brecha_positiva": 0.04256897960968559,
+      "f1_05": 0.03888888888888889
+    },
+    {
+      "config_id": "c11",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 8
+      },
+      "ventana": "julio",
+      "ap_train": 0.36548379900607275,
+      "ap": 0.33111228920815255,
+      "brecha_positiva": 0.0343715097979202,
+      "f1_05": 0.06886657101865136
+    },
+    {
+      "config_id": "c11",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 8
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.36028805896979765,
+      "ap": 0.34087608096243804,
+      "brecha_positiva": 0.01941197800735961,
+      "f1_05": 0.08866442199775533
+    },
+    {
+      "config_id": "c12",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 16
+      },
+      "ventana": "junio",
+      "ap_train": 0.4189513043046304,
+      "ap": 0.3221666799881727,
+      "brecha_positiva": 0.09678462431645768,
+      "f1_05": 0.05100039231071008
+    },
+    {
+      "config_id": "c12",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 16
+      },
+      "ventana": "julio",
+      "ap_train": 0.40657255914968643,
+      "ap": 0.3350112325099236,
+      "brecha_positiva": 0.07156132663976283,
+      "f1_05": 0.07965860597439545
+    },
+    {
+      "config_id": "c12",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 16
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.3980917573479021,
+      "ap": 0.3430384864752563,
+      "brecha_positiva": 0.055053270872645776,
+      "f1_05": 0.09343715239154617
+    },
+    {
+      "config_id": "c13",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.06,
+        "clf__max_leaf_nodes": 8
+      },
+      "ventana": "junio",
+      "ap_train": 0.40434845739202807,
+      "ap": 0.32466941373401714,
+      "brecha_positiva": 0.07967904365801093,
+      "f1_05": 0.062111801242236024
+    },
+    {
+      "config_id": "c13",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.06,
+        "clf__max_leaf_nodes": 8
+      },
+      "ventana": "julio",
+      "ap_train": 0.3943975458045713,
+      "ap": 0.334159765084094,
+      "brecha_positiva": 0.06023778072047731,
+      "f1_05": 0.0824814945364822
+    },
+    {
+      "config_id": "c13",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.06,
+        "clf__max_leaf_nodes": 8
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.3882695671065589,
+      "ap": 0.3426694394208937,
+      "brecha_positiva": 0.04560012768566524,
+      "f1_05": 0.09983361064891846
+    },
+    {
+      "config_id": "c14",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.06,
+        "clf__max_leaf_nodes": 16
+      },
+      "ventana": "junio",
+      "ap_train": 0.4774509911131946,
+      "ap": 0.324727400240842,
+      "brecha_positiva": 0.1527235908723526,
+      "f1_05": 0.0872865275142315
+    },
+    {
+      "config_id": "c14",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.06,
+        "clf__max_leaf_nodes": 16
+      },
+      "ventana": "julio",
+      "ap_train": 0.4583242474844546,
+      "ap": 0.33461819919880514,
+      "brecha_positiva": 0.12370604828564946,
+      "f1_05": 0.0896358543417367
+    },
+    {
+      "config_id": "c14",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.06,
+        "clf__max_leaf_nodes": 16
+      },
+      "ventana": "agosto_septiembre",
+      "ap_train": 0.44076416229681503,
+      "ap": 0.3445408901975943,
+      "brecha_positiva": 0.09622327209922071,
+      "f1_05": 0.10323997803404723
+    }
+  ],
+  "ablacion_monto": [
+    {
+      "config_id": "con_monto",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 8
+      },
+      "ap_media": 0.33193742302495455,
+      "ap_std": 0.008555984022771655,
+      "ap_train_media": 0.36405491216327635,
+      "brecha_media": 0.0321174891383218,
+      "puntuacion": 0.31963005872898825
+    },
+    {
+      "config_id": "sin_monto",
+      "modelo": "boosting_tasas",
+      "params": {
+        "clf__learning_rate": 0.03,
+        "clf__max_leaf_nodes": 8
+      },
+      "ap_media": 0.33155920506796055,
+      "ap_std": 0.009463749511865224,
+      "ap_train_media": 0.3630615373693662,
+      "brecha_media": 0.03150233230140568,
+      "puntuacion": 0.3189517472366765
+    }
+  ],
+  "aporte_monto_por_ventana": [
+    {
+      "ventana": "agosto_septiembre",
+      "con_monto": 0.34087608096243804,
+      "sin_monto": 0.3411953056849692,
+      "diferencia_AP": -0.00031922472253115286
+    },
+    {
+      "ventana": "julio",
+      "con_monto": 0.33111228920815255,
+      "sin_monto": 0.3312045311157019,
+      "diferencia_AP": -9.22419075493619e-05
+    },
+    {
+      "ventana": "junio",
+      "con_monto": 0.323823898904273,
+      "sin_monto": 0.3222777784032105,
+      "diferencia_AP": 0.001546120501062509
+    }
+  ],
+  "diagnostico_complejidad_texto": [],
+  "importancia_numerica_cv": [
+    {
+      "variable": "tasa_comprador_categoria",
+      "caida_ap_media": 0.021811609376521282,
+      "caida_ap_std": 0.014055119875238484,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "tasa_comprador_dif",
+      "caida_ap_media": 0.016911228543098938,
+      "caida_ap_std": 0.00463501596996599,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "log_n_items",
+      "caida_ap_media": 0.005229244392111205,
+      "caida_ap_std": 0.0012403397863719715,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "log_cantidad_total",
+      "caida_ap_media": 0.0044417221184778755,
+      "caida_ap_std": 0.0015581043519240297,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "hist_comprador_categoria_n",
+      "caida_ap_media": 0.003371384059274174,
+      "caida_ap_std": 0.0014902256723866645,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "log_n_categorias",
+      "caida_ap_media": 0.003260811622089546,
+      "caida_ap_std": 0.0014760380637805948,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "tasa_titulo",
+      "caida_ap_media": 0.0028774970160684496,
+      "caida_ap_std": 0.0011811654744646831,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "pub_dias_postulacion",
+      "caida_ap_media": 0.0027024993207738334,
+      "caida_ap_std": 0.0014650390607397433,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "hist_etiq_categoria_n",
+      "caida_ap_media": 0.0023659156735503476,
+      "caida_ap_std": 0.0012020194838826832,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "hist_comprador_n",
+      "caida_ap_media": 0.002334182278106426,
+      "caida_ap_std": 0.0015260449921447362,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "proporcion_consultas",
+      "caida_ap_media": 0.0012729323198323748,
+      "caida_ap_std": 0.0007913399873307496,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "tasa_categoria_dif",
+      "caida_ap_media": 0.001149238872085154,
+      "caida_ap_std": 0.001447070494682985,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "hist_categoria_n",
+      "caida_ap_media": 0.001100601195663199,
+      "caida_ap_std": 0.0010297824759254166,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "tasa_titulo_dif",
+      "caida_ap_media": 0.0007219648274527492,
+      "caida_ap_std": 0.00045169705883176626,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "hist_etiq_cc_n",
+      "caida_ap_media": 0.0006903136031284834,
+      "caida_ap_std": 0.0003302739116003511,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "log_titulo_largo",
+      "caida_ap_media": 0.00032342271736373544,
+      "caida_ap_std": 0.0008092194522812995,
+      "ventanas_con_aporte_positivo": 2
+    },
+    {
+      "variable": "pub_dias_consultas",
+      "caida_ap_media": 0.00024266477382852333,
+      "caida_ap_std": 0.0003745194829391301,
+      "ventanas_con_aporte_positivo": 2
+    },
+    {
+      "variable": "log_texto_palabras",
+      "caida_ap_media": 0.0002337205549496963,
+      "caida_ap_std": 0.0004079498710093799,
+      "ventanas_con_aporte_positivo": 2
+    },
+    {
+      "variable": "hist_etiq_comprador_n",
+      "caida_ap_media": 0.00014502173679567211,
+      "caida_ap_std": 0.00035970867869621563,
+      "ventanas_con_aporte_positivo": 2
+    },
+    {
+      "variable": "tasa_categoria",
+      "caida_ap_media": 0.00011436920454395273,
+      "caida_ap_std": 0.00021682868891412398,
+      "ventanas_con_aporte_positivo": 3
+    },
+    {
+      "variable": "hist_etiq_titulo_n",
+      "caida_ap_media": 5.9851902297588154e-05,
+      "caida_ap_std": 0.0001463882843261512,
+      "ventanas_con_aporte_positivo": 1
+    },
+    {
+      "variable": "semana_cos",
+      "caida_ap_media": 3.1804369805574525e-05,
+      "caida_ap_std": 6.296597274691444e-05,
+      "ventanas_con_aporte_positivo": 1
+    },
+    {
+      "variable": "semana_sin",
+      "caida_ap_media": 1.57273192382617e-05,
+      "caida_ap_std": 5.105592005104511e-05,
+      "ventanas_con_aporte_positivo": 1
+    },
+    {
+      "variable": "cat_niveles",
+      "caida_ap_media": 0.0,
+      "caida_ap_std": 0.0,
+      "ventanas_con_aporte_positivo": 0
+    },
+    {
+      "variable": "monto_nulo",
+      "caida_ap_media": 0.0,
+      "caida_ap_std": 0.0,
+      "ventanas_con_aporte_positivo": 0
+    },
+    {
+      "variable": "moneda_nula",
+      "caida_ap_media": 0.0,
+      "caida_ap_std": 0.0,
+      "ventanas_con_aporte_positivo": 0
+    },
+    {
+      "variable": "mes_sin",
+      "caida_ap_media": 0.0,
+      "caida_ap_std": 0.0,
+      "ventanas_con_aporte_positivo": 0
+    },
+    {
+      "variable": "comprador_nuevo",
+      "caida_ap_media": 0.0,
+      "caida_ap_std": 0.0,
+      "ventanas_con_aporte_positivo": 0
+    },
+    {
+      "variable": "mes_cos",
+      "caida_ap_media": 0.0,
+      "caida_ap_std": 0.0,
+      "ventanas_con_aporte_positivo": 0
+    },
+    {
+      "variable": "categoria_nueva",
+      "caida_ap_media": -6.781853000958904e-06,
+      "caida_ap_std": 5.4533796433882746e-05,
+      "ventanas_con_aporte_positivo": 1
+    },
+    {
+      "variable": "tasa_comprador",
+      "caida_ap_media": -4.408710620815468e-05,
+      "caida_ap_std": 6.830395941208946e-05,
+      "ventanas_con_aporte_positivo": 0
+    },
+    {
+      "variable": "log_descripcion_larga",
+      "caida_ap_media": -0.00029125000180254174,
+      "caida_ap_std": 0.00036796192912977505,
+      "ventanas_con_aporte_positivo": 1
+    }
+  ],
+  "metricas_C": {
+    "threshold": 0.21000000000000002,
+    "f1": 0.3905109489051095,
+    "precision": 0.2983271375464684,
+    "recall": 0.5651408450704225,
+    "ap": 0.3326007550959574,
+    "roc_auc": 0.6636158007648539,
+    "brier": 0.15108802866043905,
+    "tasa_observada": 0.2004941757853865,
+    "tasa_predicha": 0.37980938933992237,
+    "falsos_positivos": 755,
+    "falsos_negativos": 247,
+    "costo_fp": 755.0,
+    "costo_fn": 944.9721448467966,
+    "costo_total": 1699.9721448467967,
+    "costo_por_licitacion": 0.6000607641534758
+  },
+  "metricas_D": {
+    "threshold": 0.21000000000000002,
+    "f1": 0.39021178536157136,
+    "precision": 0.28826199740596625,
+    "recall": 0.6037351443123938,
+    "ap": 0.35001298483834276,
+    "roc_auc": 0.6630694589040436,
+    "brier": 0.15082086587872437,
+    "tasa_observada": 0.2020028808560258,
+    "tasa_predicha": 0.4230742849303793,
+    "falsos_positivos": 4390,
+    "falsos_negativos": 1167,
+    "costo_fp": 4390.0,
+    "costo_fn": 4464.706449539319,
+    "costo_total": 8854.706449539319,
+    "costo_por_licitacion": 0.6073603436133699
+  },
+  "intervalo_f1_D_bootstrap_semanas": [
+    0.3733199199957984,
+    0.4035502958579882
+  ],
+  "auditoria_ajustes": [
+    {
+      "etapa": "A",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "A",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "A",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "A",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "A",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "A",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "CV_junio",
+      "n": 42017,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-04-26 09:42:48+00:00",
+      "limite": "2024-06-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-05-30 23:59:00+00:00",
+      "ids_sha256": "9c9d26adcf5b2c183841ca0e2c6b6fa4678e598cc892c9d4c014dcd6d0e14413"
+    },
+    {
+      "etapa": "CV_julio",
+      "n": 54499,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-05-29 17:46:36+00:00",
+      "limite": "2024-07-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-06-30 21:50:00+00:00",
+      "ids_sha256": "1cb68f17862101534e10b95b5010746905f40921ae1983f3152f96690c487c9b"
+    },
+    {
+      "etapa": "CV_agosto_septiembre",
+      "n": 67566,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-06-27 07:54:42+00:00",
+      "limite": "2024-08-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-07-31 23:55:00+00:00",
+      "ids_sha256": "f71e084adfa483de48b39301051d84e2f11fc76ddc39dbf15844b06f1ece01cd"
+    },
+    {
+      "etapa": "AB",
+      "n": 92602,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-08-27 17:33:18+00:00",
+      "limite": "2024-10-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-09-29 20:25:00+00:00",
+      "ids_sha256": "b31fbd1c59f6d6638e7aecded52af256cdb647be3fc23ea66f3d038a1aed1ce4"
+    },
+    {
+      "etapa": "ABC",
+      "n": 110740,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-10-14 15:17:44+00:00",
+      "limite": "2024-11-15 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-11-14 23:00:00+00:00",
+      "ids_sha256": "53b519f7792fffe41b1e4c73e09fd43cb01dd54bd0a3244192ed96608ad1b5f2"
+    },
+    {
+      "etapa": "ABCD",
+      "n": 130325,
+      "desde": "2024-01-04 17:06:15+00:00",
+      "hasta": "2024-11-28 10:18:19+00:00",
+      "limite": "2025-01-01 00:00:00+00:00",
+      "etiqueta_hasta_proxy": "2024-12-29 23:59:00+00:00",
+      "ids_sha256": "be44e9201ea5308b4464d9e7656c174b037dbfc3641c64a40e969e5bc48563a7"
+    }
+  ],
+  "n_etiquetas_final": 130325,
+  "n_predicciones": 21829,
+  "proporcion_predicha_2025": 0.44262219982591966,
+  "comprobaciones": [
+    "lista blanca",
+    "features independientes de y e id",
+    "conteos solo pasado",
+    "fit de preprocesamiento aislado",
+    "cierre+embargo antes de cada fit y decisión",
+    "placebo con etiquetas barajadas",
+    "D fuera de selección",
+    "plantilla sin uso de etiquetas",
+    "IDs y orden de entrega"
+  ],
+  "limitaciones": [
+    "Disponibilidad real de etiquetas desconocida; se aproxima con cierre+30 días.",
+    "D ya observado en versiones previas; no es una nueva evaluación independiente.",
+    "Ablación y búsqueda reutilizan desarrollo; no demuestran significancia ni rendimiento en 2025."
+  ]
+}
