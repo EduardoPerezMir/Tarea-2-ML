@@ -6,4 +6,6 @@ train.csv
 .gitignore
 marco_de_trabajo.md
 submission_cambios.py
+cache_tasas_clp/
+.dependencias_ml/
 train.csv

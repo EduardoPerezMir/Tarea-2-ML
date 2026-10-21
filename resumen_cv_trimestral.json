@@ -1,0 +1,102 @@
+{
+  "periodo": [
+    "2024-01-01",
+    "2024-12-31"
+  ],
+  "zona_horaria": "America/Santiago",
+  "folds_cv": 2,
+  "modelo_elegido": "Votación LR+XGB 2:1",
+  "mejor_individual": "Logística estructura y texto C=0.5",
+  "mejor_ensamble": "Votación LR+XGB 2:1",
+  "mejor_xgboost": "XGBoost estructura y texto",
+  "parametros_mejor_xgboost": {
+    "objective": "binary:logistic",
+    "eval_metric": "aucpr",
+    "n_estimators": 250,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_child_weight": 10,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 10,
+    "reg_alpha": 0.1,
+    "scale_pos_weight": 1.0,
+    "tree_method": "hist",
+    "max_bin": 128,
+    "device": "cpu",
+    "n_jobs": 2,
+    "random_state": 42
+  },
+  "umbrales_oof": {
+    "Logística estructura y texto C=0.5": 0.22420472266956934,
+    "Votación LR+XGB 2:1": 0.21961649502577066,
+    "XGBoost estructura y texto": 0.1949576884508133
+  },
+  "filas_ajuste_final": 131427,
+  "filas_evaluacion_t4": 35887,
+  "filas_prueba": 21829,
+  "f1_t4_elegido": 0.37413960128486207,
+  "trimestres": [
+    {
+      "Trimestre": "T1",
+      "Inicio": "01-01-2024",
+      "Fin": "31-03-2024",
+      "Registros": 35790,
+      "Desiertas_pct": 20.06985191394244
+    },
+    {
+      "Trimestre": "T2",
+      "Inicio": "01-04-2024",
+      "Fin": "30-06-2024",
+      "Registros": 41185,
+      "Desiertas_pct": 20.14082797134879
+    },
+    {
+      "Trimestre": "T3",
+      "Inicio": "01-07-2024",
+      "Fin": "30-09-2024",
+      "Registros": 39691,
+      "Desiertas_pct": 19.8508477992492
+    },
+    {
+      "Trimestre": "T4",
+      "Inicio": "01-10-2024",
+      "Fin": "31-12-2024",
+      "Registros": 35887,
+      "Desiertas_pct": 20.035110207038763
+    }
+  ],
+  "folds": [
+    {
+      "Fold": 1,
+      "Entrenamiento": "T1",
+      "Validación": "T2",
+      "Filas_ajuste": 17231,
+      "Filas_predichas": 41185,
+      "Filas_puntuadas": 38714,
+      "Corte_etiquetas_ajuste": "01-04-2024"
+    },
+    {
+      "Fold": 2,
+      "Entrenamiento": "T1+T2",
+      "Validación": "T3",
+      "Filas_ajuste": 54499,
+      "Filas_predichas": 39691,
+      "Filas_puntuadas": 21231,
+      "Corte_etiquetas_ajuste": "01-07-2024"
+    }
+  ],
+  "t4_reutilizado": true,
+  "resultado_previo_sin_xgboost": {
+    "modelo_elegido": "Votación suave 4:1:1",
+    "ap_cv_media_elegido": 0.31871080182911,
+    "f1_t4_elegido": 0.37809269912539173,
+    "filas_evaluacion_t4": 35887
+  },
+  "ap_cv_media_elegido": 0.320731770209653,
+  "ap_cv_std_elegido": 0.006740978722468,
+  "ap_cv_mejor_xgboost": 0.30336159376385,
+  "f1_t4_mejor_xgboost": 0.370030064520488,
+  "f1_t4_mejor_individual": 0.370737886625145,
+  "f1_t4_mejor_ensamble": 0.374139601284862
+}
